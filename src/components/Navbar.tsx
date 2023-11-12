@@ -1,13 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center">
-          <img src="/logo.png" className="h-8 mr-3 rounded-full " alt="DotBrand Logo"  />
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Dot Brand</span>
+          <img
+            src="/logo.png"
+            className="h-8 mr-3 rounded-full "
+            alt="DotBrand Logo"
+          />
+          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+            Dot Brand
+          </span>
         </a>
         <div className="flex md:order-2">
           <button
@@ -85,7 +91,10 @@ const Navbar: React.FC = () => {
             </svg>
           </button>
         </div>
-        <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+        <div
+          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-search"
+        >
           <div className="relative mt-3 md:hidden">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
               <svg
@@ -111,32 +120,48 @@ const Navbar: React.FC = () => {
               placeholder="Search..."
             />
           </div>
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border md:border-0 rounded-lg bg-gray-50 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:flex-row md:space-x-8 md:mt-0">
             <li>
-              <Link to="/" className="block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md:text-white md:p-0 md:dark:text-white hover:text-blue-700" aria-current="page">
+              <Link
+                to="/"
+                className="block py-2 pl-3 pr-4 text-gray-900 dark:text-white rounded md:bg-transparent md:text-white md:p-0 md:hover:text-blue-700"
+                aria-current="page"
+              >
                 Home
               </Link>
             </li>
             <li>
-            <Link to="/features" className="block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md:text-white md:p-0 md:dark:text-white hover:text-blue-700" aria-current="page">
-              Product Features
-            </Link>
+              <Link
+                to="/features"
+                className="block py-2 pl-3 pr-4 text-gray-900 dark:text-white rounded md:bg-transparent md:text-white md:p-0 md:hover:text-blue-700"
+                aria-current="page"
+              >
+                Product Features
+              </Link>
             </li>
             <li>
-            <Link to="/plans" className="block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md:text-white md:p-0 md:dark:text-white hover:text-blue-700" aria-current="page">
-              Pricing and Plans
-            </Link>
+              <Link
+                to="/plans"
+                className="block py-2 pl-3 pr-4 text-gray-900 dark:text-white dark rounded md:bg-transparent md:text-white md:p-0 md:hover:text-blue-700"
+                aria-current="page"
+              >
+                Pricing and Plans
+              </Link>
             </li>
             <li>
-            <Link to="/contact" className="block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent md:text-white md:p-0 md:dark:text-white hover:text-blue-700 " aria-current="page">
-             Contact Us
-            </Link>
+              <Link
+                to="/contact"
+                className="block py-2 pl-3 pr-4 text-gray-900 dark:text-white rounded md:bg-transparent md:text-white md:p-0 md:hover:text-blue-700"
+                aria-current="page"
+              >
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
