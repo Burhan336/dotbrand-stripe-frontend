@@ -3,15 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPrescriptionBottle,
   faUserMd,
-  faChartLine,
   faClinicMedical,
   faMobileAlt,
-  faBarcode,
   faComments,
   faShieldVirus,
   faCogs,
   faCalendar,
-  faNotesMedical,
 } from "@fortawesome/free-solid-svg-icons";
 
 const ProductFeatures: React.FC = () => {
@@ -31,7 +28,7 @@ const ProductFeatures: React.FC = () => {
               Medication Management
             </h3>
             <p className="text-gray-600">
-              Streamline medication management and dispensing for pharmacies.
+              Efficiently manage pharmacy catalog, categories, and products.
             </p>
           </div>
 
@@ -41,87 +38,73 @@ const ProductFeatures: React.FC = () => {
               <FontAwesomeIcon icon={faUserMd} />
             </div>
             <h3 className="text-xl font-semibold mb-2">
-              Healthcare Professionals
+              User Hierarchy Management
             </h3>
             <p className="text-gray-600">
-              Connect with healthcare professionals and provide quality care.
+              Implement a multi-level admin hierarchy for efficient store
+              management.
             </p>
           </div>
 
-          {/* Feature 3: Analytics and Insights */}
-          <div className="p-4 border rounded-lg shadow-xl bg-white text-center">
-            <div className="text-3xl text-blue-500 mb-4">
-              <FontAwesomeIcon icon={faChartLine} />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">
-              Analytics and Insights
-            </h3>
-            <p className="text-gray-600">
-              Gain valuable insights and data-driven decision-making
-              capabilities.
-            </p>
-          </div>
-
-          {/* Feature 4: Clinical Integration */}
+          {/* Feature 3: Clinical Integration */}
           <div className="p-4 border rounded-lg shadow-xl bg-white text-center">
             <div className="text-3xl text-blue-500 mb-4">
               <FontAwesomeIcon icon={faClinicMedical} />
             </div>
             <h3 className="text-xl font-semibold mb-2">Clinical Integration</h3>
             <p className="text-gray-600">
-              Seamlessly integrate with clinical systems for better patient
+              Seamlessly integrate with clinical systems for improved patient
               care.
             </p>
           </div>
 
-          {/* Feature 5: Mobile Access */}
+          {/* Feature 4: Mobile Access */}
           <div className="p-4 border rounded-lg shadow-xl bg-white text-center">
             <div className="text-3xl text-blue-500 mb-4">
               <FontAwesomeIcon icon={faMobileAlt} />
             </div>
             <h3 className="text-xl font-semibold mb-2">Mobile Access</h3>
             <p className="text-gray-600">
-              Access your pharmacy application on mobile devices for
-              convenience.
+              Access the application on mobile devices for convenience and
+              flexibility.
             </p>
           </div>
 
-          {/* Feature 7: Secure Messaging */}
+          {/* Feature 5: Secure Messaging */}
           <div className="p-4 border rounded-lg shadow-xl bg-white text-center">
             <div className="text-3xl text-blue-500 mb-4">
               <FontAwesomeIcon icon={faComments} />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Secure Messaging</h3>
+            <h3 className="text-xl font-semibold mb-2">User Communication</h3>
             <p className="text-gray-600">
-              Communicate securely with patients and healthcare providers.
+              Facilitate secure communication between users and admins.
             </p>
           </div>
 
-          {/* Feature 8: Data Security */}
+          {/* Feature 6: Data Security */}
           <div className="p-4 border rounded-lg shadow-xl bg-white text-center">
             <div className="text-3xl text-blue-500 mb-4">
               <FontAwesomeIcon icon={faShieldVirus} />
             </div>
             <h3 className="text-xl font-semibold mb-2">Data Security</h3>
             <p className="text-gray-600">
-              Ensure the highest level of data security and compliance
-              standards.
+              Ensure high-level data security and compliance standards.
             </p>
           </div>
 
-          {/* Feature 9: Automation */}
+          {/* Feature 7: Automation */}
           <div className="p-4 border rounded-lg shadow-xl bg-white text-center">
             <div className="text-3xl text-blue-500 mb-4">
               <FontAwesomeIcon icon={faCogs} />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Automation</h3>
+            <h3 className="text-xl font-semibold mb-2">Task Automation</h3>
             <p className="text-gray-600">
-              Implement automation for repetitive tasks to save time and reduce
-              errors.
+              Implement automation for repetitive tasks, saving time and
+              reducing errors.
             </p>
           </div>
 
-          {/* Feature 10: Appointment Scheduling */}
+          {/* Feature 8: Appointment Scheduling */}
           <div className="p-4 border rounded-lg shadow-xl bg-white text-center">
             <div className="text-3xl text-blue-500 mb-4">
               <FontAwesomeIcon icon={faCalendar} />
@@ -130,22 +113,7 @@ const ProductFeatures: React.FC = () => {
               Appointment Scheduling
             </h3>
             <p className="text-gray-600">
-              Allow patients to schedule appointments and manage their health
-              online.
-            </p>
-          </div>
-
-          {/* Feature 11: Electronic Health Records */}
-          <div className="p-4 border rounded-lg shadow-xl bg-white text-center">
-            <div className="text-3xl text-blue-500 mb-4">
-              <FontAwesomeIcon icon={faNotesMedical} />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">
-              Electronic Health Records
-            </h3>
-            <p className="text-gray-600">
-              Maintain digital health records to streamline patient care and
-              documentation.
+              Allow users to schedule appointments and manage health online.
             </p>
           </div>
         </div>
